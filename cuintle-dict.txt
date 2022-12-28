@@ -1,0 +1,11 @@
+performance=perfórmance
+tool=tchúl
+ID/i
+AWS/i
+SA/i
+TI/i
+CEO=Sí/i/Ôu
+service=sérvice
+services=sérvices
+gmail=gê-mê-yú
+.com=pontukom
