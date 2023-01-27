@@ -2,7 +2,7 @@
 
 Name:           rhvoice
 Version:        1.8.0
-Release:        7%{?dist}
+Release:        10%{?dist}
 Summary:        Free and open source speech synthesizer
 
 License:        LGPLv2.1+
@@ -42,6 +42,9 @@ Suggests:       pulseaudio
 Requires:       %{name}-american-english 
 Requires:       %{name}-utils
 Requires:       %{name}-speech-dispatcher-plugin
+
+Obsoletes:      %{name} < %{version}-%{release}
+Conflicts:      %{name} < %{version}-%{release}
 
 %description
 RHVoice is a free and open source speech synthesizer by Olga Yakovleva.
@@ -306,6 +309,9 @@ install -m 755 %{SOURCE4}  %{buildroot}/%{_bindir}/talktext.sh
 %ghost %{_datadir}/RHVoice/voices/natia/*
 
 %changelog
+* Fri Jan 27 2023 Xoloitzcuintle <xoloitzcuintle_god@protonmail.com> - 1.8.0-10
+- Fix packaging bug (remaining old versions)
+
 * Tue Dec 27 2022 Xoloitzcuintle <xoloitzcuintle_god@protonmail.com> - 1.8.0-7
 - talktext.sh script: Added missing pipe in SELECTION_CMD variable
 
