@@ -10,7 +10,7 @@ https://copr.fedorainfracloud.org/coprs/cuintle/RHVoice
 
 ### Added `talktext.sh` script
 
-I know, its a terrible name. For now, supports only pt_BR and en_US, soon will get a `--language lang` param with all RHVoice supported languages. 
+I know, its a terrible name. For now, supports only pt_BR and en_US, soon will get a `--language lang` param with all languages supported by RHVoice. 
 
 ```Usage: talktext.sh [OPTIONS]
 Speak copied or selected text using RHVoice
